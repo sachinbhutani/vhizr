@@ -27,7 +27,7 @@
   },
   "scripts": {
     "dev": "hz serve & webpack-dev-server --port 9090",
-    "rdev": "rethinkdb && hz serve & webpack-dev-server --port 9090"
+    "rdev": "hz serve --start_rethinkdb & webpack-dev-server --port 9090"
   },
   "author": "Sachin Bhutani <sachin1705@gmail.com>",
   "license": "MIT"

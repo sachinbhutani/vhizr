@@ -3,3 +3,4 @@
 /rethinkdb_data/*
 /data/*
 /dist/*
+npm-debug.log
