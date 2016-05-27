@@ -1,3 +1,5 @@
 #Ignore
 /node_modules/*
 /rethinkdb_data/*
+/data/*
+/dist/*
