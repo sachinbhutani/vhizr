@@ -12,7 +12,7 @@
     </div>
   </div>
   </form>
-  </ul> 
+  </ul>
 </template>
 
 <script>
@@ -35,7 +35,7 @@ export default {
   },
   attached () {
     // set watch for list of tables when the component is attached for auto updates
-    // set this.tables to array returned by watch to use changefeeds! Awesome Horizon! 
+    // set this.tables to array returned by watch to use changefeeds! Awesome Horizon!
     vhizr.watch().subscribe((doc) => this.tables = doc,
                              (err) => console.log('error'))
   },
@@ -44,15 +44,15 @@ export default {
       let newEntry = {}
       this.error = ''
       newEntry.table = this.newTable.toLowerCase().trim()
-      vhizr.store(newEntry).subscribe( (doc) => console.log('Added Collection id :'+ doc.id))
+      vhizr.store(newEntry).subscribe( (doc) => console.log('Added Collection id :'+ doc.id), (err) => console.log(err), () => this.newTable = '')
     },
    selectTable(selectedTable){
      this.selectedTable = selectedTable
    },
    isActive(selectedTable){
-     if (this.selectedTable === selectedTable) 
+     if (this.selectedTable === selectedTable)
       return 'active'
-     else 
+     else
       return ''
    }
  }
