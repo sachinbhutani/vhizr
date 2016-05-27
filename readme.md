@@ -23,7 +23,8 @@ Point your [browser] to [http://localhost:9090] (http://localhost:9090/)`
 
 The app needs an existing rethinkdb instance to be running.
 If you like VH(i)ZR to run an rethinkdb instance for you
-use `npm run rdev` instead of  `npm run dev`
+use 
+`npm run rdev` instead of  `npm run dev`
 
 ####Adding a collection to VH(i)ZR####
 No collection are included in the interface unless explicitly added.
